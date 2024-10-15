@@ -14,7 +14,7 @@ import scipy
 
 # steady
 # python graphs_pt_1D.py --data_path data/advection_1D/steady/ --check 1 --num_b 10000 --mode "train" --data_type "advection_1D"
-# python graphs_pt_1D.py --data_path data/advection_1D/steady/ --check 1 --num_b 1 --mode "test" --data_type "advection_1D" --reorder True
+# python graphs_pt_1D.py --data_path data/advection_1D/steady/ --check 1 --num_b 1 --mode "test" --data_type "advection_1D" --reorder False
 
 def check_solution_error_numpy(A, s, b):
     """
