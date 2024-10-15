@@ -18,11 +18,15 @@ pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -
 Generate the training and validation dataset:
 ```
 python matrices_text.py --N_list 100 --mode "train" --steady 1
+```
+```
 python graphs_pt_1D.py --data_path data/advection_1D/steady/ --check 1 --num_b 10000 --mode "train" --data_type "advection_1D"
 ```
 
 Generate the test dataset:
 ```
 python matrices_text.py --N_list 100 1000 --mode "test" --steady 1
+```
+```
 python graphs_pt_1D.py --data_path data/advection_1D/steady/ --check 1 --num_b 1 --mode "test" --data_type "advection_1D"
 ```
